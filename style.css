@@ -1,0 +1,605 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav{
+width: 100%;
+height: 4.5rem;
+display: flex;
+align-items: center;
+justify-content:flex-end;
+z-index: 2000;
+	
+}
+
+
+body{
+	overflow-x: hidden;
+}
+
+#nav.nav-active{
+	background-color: black;
+	transition: .5s;
+}
+
+.nav-items.nav-active ul li a{
+	color: white;
+}
+
+nav a{
+	color: #121212;
+}
+a{
+	cursor: pointer;
+}
+
+
+.activenav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2000;
+}
+
+a{
+text-decoration: none;
+}
+button{
+	cursor: pointer;
+}
+
+.logo{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	margin-left: 2.5rem;
+	position: absolute;
+	left: 0;
+	color: #121212;
+}
+
+ul li{
+ display: inline-block;
+font-family: 'Open Sans', sans-serif;
+ margin: 0 1.7rem;
+ font-size: 1.1rem;
+  cursor: pointer;
+	transition: .5s;
+}
+ul li:hover:active{
+transform: scale(1.1);
+}
+
+.sign-in{
+	padding: 0.5rem 1rem;
+	border-radius: 10rem;
+	color: #fff;
+	margin-right: 8rem;
+	background-color: #121212;
+	border: none;
+	box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+}
+
+.container{
+display: flex;
+
+}
+
+.left{
+background-color: #111222;
+	width: 40%;
+	height: 100vh;
+	position: relative;
+	
+}
+
+.right{
+	background-color: #fff;
+	width: 65%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.content{
+	width: 65%;
+	position: relative;
+	height: 16rem;
+	
+}
+.line{
+	height: 0.3rem;
+	border-radius: 10rem;
+	width: 5rem;
+	background-color: black;
+	margin: .5rem 0;
+	margin-bottom: .7rem;
+}
+.content h1{
+	color: #020202;
+	font-size: 2.5rem;
+	font-family: 'Poppins', sans-serif;
+}
+.content p{
+	color: #7C7C7C;
+	font-family: 'Heebo', sans-serif;
+	line-height: 1.4rem;
+}
+.explore-btn{
+	position: absolute;
+	bottom: 0;
+	padding: 0.6rem 1rem;
+	background-color: #121212;
+	color: #fff;
+	border: none;
+	border-radius: 10rem;
+}
+.socials{
+	background-color: #eee;
+	width: 5%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.icons{
+	display: flex;
+	flex-direction: column;
+}
+
+.fb,.twitter,.insta{
+	margin: 1.5rem 0;
+    font-size: 1.8rem;
+}
+
+.main-img{
+	width: 115%;
+	height: 100vh;
+}
+
+.images{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 10rem;
+	margin-top: 6rem;
+}
+.categories{
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+}
+.categories h1{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+	font-size: 3rem;
+	margin: 3rem 0;
+	margin-bottom: 3.4rem;
+}
+
+
+
+.women{
+    width: 350px;
+
+}
+
+.men{
+	width: 350px;
+}
+
+.kid{
+	width: 350px;
+}
+.womens{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.womens h1{
+	position: absolute;top: 1;
+	background-color: #fff;
+	font-family: sans-serif;
+	padding: 0.7rem 0.5rem;
+}
+
+.mens{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.mens h1{
+	position: absolute;top: 1;
+	background-color: #fff;
+	font-family: sans-serif;
+	padding: 0.7rem 0.5rem;
+}
+
+
+.kids{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.kids h1{
+	position: absolute;top: 1;
+	background-color: #fff;
+	font-family: sans-serif;
+	padding: 0.7rem 0.5rem;
+}
+
+
+.new-arrivals{
+	margin-top: 7rem;
+	font-family: 'Poppins', sans-serif;
+	margin-left: 10rem;
+	position: relative;
+}
+
+.heading h1{
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 5rem;
+}
+
+.heading h3{
+	font-size: 2.5rem;
+	margin: 1.4rem 0;
+	position: relative;
+}
+
+.heading h3::after{
+	position: absolute;
+	content: '';
+	bottom: -.2rem;
+	height: 4px;
+	background: #121212;
+	margin: 0 auto;
+	left: -70rem;
+    right: 0;
+	width: 10%;
+	border-radius: 10px;
+	transition: .5s;
+}
+
+.heading h3:hover::after{
+	width: 15%;
+}
+
+
+.style{
+	width: 300px;
+	box-shadow: 0px -2px 25px 0px rgba(50, 50, 50, 0.22);
+	transition: .5s;
+}
+
+.style:hover{
+	transform: scale(1.05)
+}
+
+.newarr{
+	display: flex;
+	width: 65%;
+	margin-top: 3rem;
+}
+
+.abt{
+	margin-left: 3rem;
+}
+
+.abt h1{
+	margin-bottom: 2.7rem;
+	margin-right: 0.5rem;
+}
+
+.abt p{
+	font-size: 1.3rem;
+	font-family: 'Heebo', sans-serif;
+	line-height: 2.2rem;
+}
+
+.end{
+	display: flex;
+	width: 65%;
+	margin-top: 3rem;
+	position: absolute;
+	right: 0;
+	margin-right: 10rem;
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+}
+
+
+.abt-2{
+	margin-left: 3rem;
+}
+
+.abt-2 h1{
+	margin-bottom: 2.7rem;
+}
+
+.abt-2 p{
+	font-size: 1.3rem;
+	font-family: 'Heebo', sans-serif;
+}
+
+.num{
+font-family: sans-serif;
+	font-size: 2.5rem;
+	margin-left:= 2rem;
+}
+
+
+.brand-ctn h1{
+	margin-top: 45rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 3rem;
+	width: 100%;
+}
+
+.models{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.style-1{
+	width: 300px;
+	box-shadow: 0px -2px 25px 0px rgba(50, 50, 50, 0.22);
+	transition: .5s;
+	margin: 1.7rem;
+	margin-bottom: 1rem;
+}
+
+.style-1:hover{
+	transform: scale(1.05)
+}
+
+.see-more{
+	margin: 1rem;
+	margin-left: 5.5rem;
+	font-size: 1.7rem;
+	font-family: 'Poppins', sans-serif;
+	background-color: #121212;
+	padding: .7rem;
+	width: 12rem;
+	height: 4rem;
+	color: #fff;
+     cursor: pointer;
+}
+
+
+
+.fa-long-arrow-right{
+	font-size: 3rem;
+	margin-left: .5rem;
+}
+
+.ctn-3{
+	margin-top: 10rem;
+}
+.heading-1 h1{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 3.2rem;
+	margin-bottom: 1.5rem;
+}
+
+.heading-1 h2{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.5rem;
+}
+
+.img-style{
+	width: 80%;
+	margin: 0 6rem;
+	margin-left: 8.5rem;
+	margin-bottom: 3rem;
+	margin-top: 4rem;
+}
+
+.footer{
+	display: flex;
+	background-color: #121212;
+	width: 100%;
+	color: white;
+	font-family: sans-serif;
+	align-items: center;
+	padding: 3rem;
+	margin-top: 10rem;
+}
+
+.product,.market,.magazine{
+	font-family: 'Poppins', sans-serif;
+	margin: 0 3.5rem;
+}
+.product p,.market p,.magazine p{
+	margin: 1rem;
+	font-family: 'Heebo', sans-serif;
+	cursor: pointer;
+}
+
+.news-letter{
+    width: 25rem;
+	font-size: 1rem;
+	height: 10rem;
+	margin-left: 2rem;
+}
+
+.news-letter h1{
+	font-size: 2rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.news-letter p{
+    font-size: 1.2rem;
+	font-family: 'Hebbo', sans-serif;
+}
+
+
+.logo-1{
+	font-family: 'Poppins', sans-serif;
+}
+
+.social-media{
+	background-color: #121212;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	justify-content: space-between;
+	padding: .5rem;
+}
+
+
+.social-media a{
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+
+.social-links{
+	margin-right: 4rem;
+	margin-bottom: 1.5rem;
+}
+.privacy-policy{
+	color: #fff;
+}
+
+.privacy-policy p{
+	margin-left: 3.5rem;
+	margin-bottom: 1.5rem;
+}
+.email{
+	margin: 1rem 0;
+	font-size: 1.8rem;
+}
+.fa-envelope{
+	position: relative;
+	top: 4.5px;
+}
+input{
+	height: 2rem;
+	width: 15rem;
+	border: none;
+	font-family: sans-serif;
+	padding: .3rem;
+}
+
+.to-top {
+  background: #121212;
+  position: fixed;
+  bottom: 20px;
+  right:17px;
+  width:45px;
+  height:45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  text-decoration: none;
+  opacity:0;
+  border: 2px solid #fff;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+	transition: 1s
+}
+
+
+/*services*/
+.service-cnt{
+    width: 100%;
+	margin-top: 8rem;
+}
+
+.service-heading h1{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 3rem;
+	margin-bottom: .7rem;
+}
+
+
+
+.service-heading h2{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.5rem;
+}
+.service-heading p{
+	text-align: center;
+	font-family: 'Heebo', sans-serif;
+	font-size: 1.5rem;
+	
+}
+#services{
+	padding-top: 1rem;
+}
+.services{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 3rem 0;
+	margin-bottom: 6.5rem;
+}
+
+.icon{
+	display: flex;
+}
+
+.accesibility,.fashion-updates,.model-features,.fashion-blogs{
+	width: 20rem;
+	margin:1.5rem 1rem;
+	box-shadow:7px 7px 25px 0px rgba(50, 50, 50, 0.16);
+	padding: 1.3rem 1.5rem;
+	border-radius: 1rem;
+}
+
+.accesibility h1,.fashion-updates h1,.model-features h1,.fashion-blogs h1{
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+
+.accesibility p,.fashion-updates p,.model-features p,.fashion-blogs p{
+		font-family: 'Heebo', sans-serif;
+	font-size: 1.1rem;
+}
+
+.icon{
+	font-size: 2.5rem;
+}
+
+.divider{
+	background-color: gray;
+	height: 1px;
+	width: 85%;
+	margin: 0 auto;
+	opacity: 50%;
+	margin-top: 1.5rem ;
+}
+
+
+
+
