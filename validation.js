@@ -28,7 +28,7 @@ function load(){
 		modal.style.transform = "scale(1)";
 		link.addEventListener('click',pageRedirect)
 		 function pageRedirect() {
-      window.location.href = 'MainPage.html';
+      window.location.href = 'index.html';
     }
 		
 								  
